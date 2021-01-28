@@ -1,2 +1,2 @@
 # Survey-Form
-Creating a simple survey form using html and CSS
+Creating a simple social media survey form using html and CSS
