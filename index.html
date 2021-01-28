@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>  
+    <link rel="stylesheet" href = "styles.css">  
+ <body class = "background"> 
+<div class = "container">
+    <h1 id="title" class = "text-center">
+        Social Media Survey Form
+    </h1>
+
+    <form id = "survey-form">
+        <div class = "form-group">
+            <label id = "name-label" for = "name">Name</label>
+            <input class = "form-control" type="text" name ="name" id = "name" placeholder = "Enter your name" required>
+        </div>
+        <div class = "form-group">
+            <label id = "email-label" for = "email">Email</label>
+            <input class = "form-control" type="email" name ="email" id = "email" placeholder = "Enter your email" required>
+        </div>
+        <div class = "form-group">
+            <label id = "number-label" for = "number">Age (optional)</label>
+            <input class = "form-control" type="number" name ="number" id = "age" placeholder = "Enter your age" min="16" max="99">
+        </div>
+        <div class = "form-group">
+            <p>What is your favorite application?</p>
+            <select id="dropdown" name ="app" required>
+                <option value ="FB">Facebook</option>
+                <option value = "Twit">Twitter</option>
+                <option value = "Snap">Snapchat</option>
+                <option value = "Insta">Instagram</option>
+                <option value = "Tin">Tinder</option>
+            </select>
+        </div>
+        <div class = "form-group">
+            <p>What features do you love most aboout this application? (Check all that apply)</p>
+            <label><input name = "prefer" value ="Friends-most-use" type = "checkbox" class = "input-checkbox">Friends use this platform most</label><br>
+            <label><input name = "prefer" value ="Layout" type = "checkbox" class = "input-checkbox">Layout is better</label><br>
+            <label><input name = "prefer" value ="Ease-of-use" type = "checkbox" class = "input-checkbox">Easy to use</label><br>
+            <label><input name = "prefer" value ="company-bias" type = "checkbox" class = "input-checkbox">I like the company</label><br>
+            <label><input name = "prefer" value ="Interaction" type = "checkbox" class = "input-checkbox">Others Interaction</label>
+        </div>
+        <div class = "form-group">
+            <p>Any suggestions or comments?</p>
+            <textarea name = "comment" id = "age" placeholder = "Anything that comes to mind?" class = "input-textarea"></textarea>
+        </div>
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+    </form>
+</div>
+</body>
+</div>
+</html>
